@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <title>有么体育，有么直播，有么体育直播</title>
+<head>
+<script>
+        function isPcFun() {
+            let u = navigator.userAgent;
+            let Agents = [
+                "Android",
+                "iPhone",
+                "webOS",
+                "BlackBerry",
+                "SymbianOS",
+                "Windows Phone",
+                "iPad",
+                "iPod"
+            ];
+            let flag = true;
+            for (let i = 0; i < Agents.length; i++) {
+                if (u.indexOf(Agents[i]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        var isPc = isPcFun();
+        if (!isPc) {
+            window.location.href = "http://m.youmoa.xyz";
+        }else {
+            window.location.href = 'http://web.youmoa.xyz';
+        }
+</script>
+</body>
+</html>
